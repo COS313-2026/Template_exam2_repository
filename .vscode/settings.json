@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+      "name": "Exam 2 Database (sports_db)",
+      "driver": "PostgreSQL",
+      "server": "localhost",
+      "port": 5432,
+      "database": "sports_db",
+      "username": "admin",
+      "password": "LeaguePassword2026"
+    }
+  ]
+}

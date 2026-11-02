@@ -1,0 +1,19 @@
+{
+    "name": "COS313 - Exam 2 Workspace",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [
+        5432
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mtxr.sqltools",
+                "mtxr.sqltools-driver-pg"
+            ]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/setup_db.sh",
+    "remoteUser": "vscode"
+}
