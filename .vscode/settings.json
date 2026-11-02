@@ -1,4 +1,10 @@
 {
+  "chat.disableAIFeatures": true,
+  "github.copilot.enable": {
+    "*": false
+  },
+  "github.copilot.editor.enableAutoCompletions": false,
+  "editor.inlineSuggest.enabled": false,
   "sqltools.connections": [
     {
       "name": "Exam 2 Database (sports_db)",

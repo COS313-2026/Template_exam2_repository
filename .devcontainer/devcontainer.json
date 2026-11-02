@@ -11,7 +11,15 @@
             "extensions": [
                 "mtxr.sqltools",
                 "mtxr.sqltools-driver-pg"
-            ]
+            ],
+            "settings": {
+                "chat.disableAIFeatures": true,
+                "github.copilot.enable": {
+                    "*": false
+                },
+                "github.copilot.editor.enableAutoCompletions": false,
+                "editor.inlineSuggest.enabled": false
+            }
         }
     },
     "postCreateCommand": "bash .devcontainer/setup_db.sh",

@@ -15,3 +15,6 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: LeaguePassword2026
       POSTGRES_DB: sports_db
+    extra_hosts:
+      - "api.githubcopilot.com:127.0.0.1"
+      - "copilot-proxy.githubusercontent.com:127.0.0.1"
