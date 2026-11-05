@@ -7,6 +7,12 @@ services:
       - ..:/workspace:cached
     command: sleep infinity
     network_mode: service:db
+    environment:
+      PGHOST: localhost
+      PGPORT: 5432
+      PGUSER: admin
+      PGPASSWORD: LeaguePassword2026
+      PGDATABASE: sports_db
 
   db:
     image: postgres:latest

@@ -28,7 +28,7 @@ Open this repository in GitHub Codespaces by clicking the green **Code** button 
 Once your Codespace finishes building and the terminal prompt appears, run this quick health-check command to confirm PostgreSQL is running and ready:
 
 ```bash
-psql -c "SELECT 1 AS database_connected;"
+psql -h localhost -c "SELECT 1 AS database_connected;"
 ```
 
 You should see:
@@ -40,6 +40,9 @@ You should see:
 ```
 
 If you see this output, your database environment is **100% verified and operational**!
+
+> [!TIP]
+> If you already opened your Codespace before this update, either include `-h localhost` in your `psql` commands or run `source ~/.bashrc` once in your terminal to load the database connection settings.
 
 ### 3. Review the Permitted Syntax Reference
 Review [`EXAM_2_SYNTAX_REFERENCE.md`](EXAM_2_SYNTAX_REFERENCE.md) in this repository. This 1-page document is official permitted material for the exam and outlines standard PostgreSQL syntax rules for:

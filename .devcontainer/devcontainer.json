@@ -23,5 +23,12 @@
         }
     },
     "postCreateCommand": "bash .devcontainer/setup_db.sh",
-    "remoteUser": "vscode"
+    "remoteUser": "vscode",
+    "containerEnv": {
+        "PGHOST": "localhost",
+        "PGPORT": "5432",
+        "PGUSER": "admin",
+        "PGPASSWORD": "LeaguePassword2026",
+        "PGDATABASE": "sports_db"
+    }
 }
